@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var jsPDF = require('jspdf');
+// var jsPDF = require('jspdf');
 
 // set the view engine to ejs
 app.set('view engine', 'ejs');
@@ -28,6 +28,8 @@ app.get('/(:id)', function(req, res) {
 // attach the express server to sharejs
 // sharejs.server.attach(app, options);
 
-// listen on port 8000 (for localhost) or the port defined for heroku
 var port = process.env.PORT || 8000;
-app.listen(port);
+
+app.listen(port, () => {
+  console.log("application listening on port:", port);
+})
