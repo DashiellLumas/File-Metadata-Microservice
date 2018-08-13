@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Generator</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body class="container-fluid">
+  <h1 class="center-text">Resume Generator</h1>
+    <button onclick="generatePDF()">Generate PDF</button>
+    <section class="row">
+        <textarea class="col-md-6 full-height" id="pad"><div class="test">
+
+        </div><b></b>Edit your resume here</textarea>
+        <div class="col-md-6 full-height" id="html-2-pdfwrapper"></div>
+    </section>
+
+
+    <script src="https://cdn.rawgit.com/showdownjs/showdown/1.0.2/dist/showdown.min.js"></script>
+    <script src="https://unpkg.com/jspdf@latest/dist/jspdf.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
