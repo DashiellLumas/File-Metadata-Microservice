@@ -1,7 +1,18 @@
+@font-face {
+  font-family: 'Monofett';
+  src: url(/Monofett.ttf);
+}
+
 html, body, section, .full-height {
     height: 100%;
 }
-
+body{
+  background-color: #E6DADA;
+  /* color: white !important; */
+}
+textarea{
+  background-color: #E6DADA
+}
 #pad{
     font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
 
@@ -13,6 +24,7 @@ html, body, section, .full-height {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
+    padding-top: 25px;
 }
 
 #markdown {
@@ -22,8 +34,56 @@ html, body, section, .full-height {
 
 .center-text {
   text-align: center;
+  margin-bottom: 5px;
 }
-
+#markdown2pdf{
+  text-align: center;
+  font-family: Monofett !important;
+  font-weight: 400;
+  font-size: 52px;
+}
 .test {
   color:blue;
+}
+
+#html-2-pdfwrapper{
+  /* width: 100%; */
+  border-left: 3px solid rgba(0,0,0,.1);
+}
+
+button{
+  background:#1AAB8A;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+button:hover{
+  background:#fff;
+  color:#1AAB8A;
+}
+button:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #1AAB8A;
+  transition:400ms ease all;
+}
+button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+button:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
 }

@@ -3,18 +3,29 @@
 <head>
     <title>Resume Generator</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monofett" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 </head>
 
 <body class="container-fluid">
-  <h1 class="center-text">Resume Generator</h1>
-    <button onclick="generatePDF()">Generate PDF</button>
-    <section class="row">
-        <textarea class="col-md-6 full-height" id="pad"><div class="test">
+  <div class="center-text">
+    <h1 id="markdown2pdf" class="center-text">Markdown2PDF</h1>
+      <button class="center-text" onclick="generatePDF()">Generate PDF</button>
+  </div>
 
-        </div><b></b>Edit your resume here</textarea>
+    <section class="row">
+        <textarea placeholder="Paste markdown here" class="col-md-6 full-height" id="pad">##This is Markdown
+
+###You can do things like this
+
+######Bro!!!!!
+
+line trick
+</textarea>
         <div class="col-md-6 full-height" id="html-2-pdfwrapper"></div>
+
     </section>
+
 
 
     <script src="https://cdn.rawgit.com/showdownjs/showdown/1.0.2/dist/showdown.min.js"></script>
