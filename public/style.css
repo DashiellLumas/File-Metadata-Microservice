@@ -5,7 +5,10 @@
 
 html, body, section, .full-height {
     height: 100%;
+    margin: 0;
 }
+
+
 body{
   background-color: #E6DADA;
   /* color: white !important; */
@@ -27,11 +30,6 @@ textarea{
     padding-top: 25px;
 }
 
-#markdown {
-    overflow: auto;
-    border-left: 1px solid black;
-}
-
 .center-text {
   text-align: center;
   margin-bottom: 5px;
@@ -42,15 +40,10 @@ textarea{
   font-weight: 400;
   font-size: 52px;
 }
-.test {
-  color:blue;
-}
 
 #html-2-pdfwrapper{
-  /* width: 100%; */
   border-left: 3px solid rgba(0,0,0,.1);
 }
-
 button{
   background:#1AAB8A;
   color:#fff;
@@ -86,4 +79,9 @@ button:after{
 button:hover:before,button:hover:after{
   width:100%;
   transition:800ms ease all;
+}
+
+.footer {
+  background-color: #1AAB8A;
+  width:100%;
 }

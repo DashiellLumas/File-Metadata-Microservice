@@ -1,36 +1,28 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Resume Generator</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Monofett" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+  <title>Markdown2PDF</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Monofett" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
 </head>
 
-<body class="container-fluid">
-  <div class="center-text">
-    <h1 id="markdown2pdf" class="center-text">Markdown2PDF</h1>
+<body>
+    <div class="center-text">
+      <h1 id="markdown2pdf" class="center-text">Markdown2PDF</h1>
       <button class="center-text" onclick="generatePDF()">Generate PDF</button>
-  </div>
+    </div>
 
-    <section class="row">
-        <textarea placeholder="Paste markdown here" class="col-md-6 full-height" id="pad">##This is Markdown
+      <textarea placeholder="Paste markdown here" class="col-md-6 full-height" id="pad">##Write your markdown here.
 
-###You can do things like this
+  </textarea>
+      <div class="col-md-6 full-height" id="html-2-pdfwrapper"></div>
 
-######Bro!!!!!
-
-line trick
-</textarea>
-        <div class="col-md-6 full-height" id="html-2-pdfwrapper"></div>
-
-    </section>
-
-
-
-    <script src="https://cdn.rawgit.com/showdownjs/showdown/1.0.2/dist/showdown.min.js"></script>
-    <script src="https://unpkg.com/jspdf@latest/dist/jspdf.min.js"></script>
-    <script src="script.js"></script>
+  <script src="https://cdn.rawgit.com/showdownjs/showdown/1.0.2/dist/showdown.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.min.js"></script>
+  <script src="script.js"></script>
 
 </body>
+
 </html>

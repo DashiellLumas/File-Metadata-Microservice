@@ -78,7 +78,7 @@ window.onload = function() {
         if(didChangeOccur()){
             convertTextAreaToMarkdown();
         }
-    }, 1000);
+    }, 10);
 
     pad.addEventListener('input', convertTextAreaToMarkdown);
 
