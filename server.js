@@ -28,7 +28,7 @@ app.get('/(:id)', function(req, res) {
 // attach the express server to sharejs
 // sharejs.server.attach(app, options);
 
-var port = process.env.PORT || 8000;
+var port = process.env.PORT || 8002;
 
 app.listen(port, () => {
   console.log("application listening on port:", port);
